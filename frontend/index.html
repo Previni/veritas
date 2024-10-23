@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Ponto Previni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -50,7 +51,30 @@
     </div>
 
     <div id="detailModal" class="modal">
-        <!-- Conteúdo do modal aqui -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Detalhes do Registro</h2>
+            <div class="detail-grid">
+                <div class="detail-info">
+                    <div class="detail-item detail-re">
+                        <strong>RE:</strong> <span id="detailRE"></span>
+                    </div>
+                    <div class="detail-item detail-item-full">
+                        <strong>Nome:</strong> <span id="detailName"></span>
+                    </div>
+                    <div class="detail-item detail-item-full">
+                        <strong>Data/Hora:</strong> <span id="detailTimestamp"></span>
+                    </div>
+                    <div class="detail-item detail-item-full">
+                        <strong>Posto:</strong> <span id="detailPosto"></span>
+                    </div>
+                    <div class="detail-item detail-item-full">
+                        <strong>Localização:</strong> <span id="detailLocation"></span>
+                    </div>
+                </div>
+                <img id="employeePhoto" src="" alt="Foto do Colaborador">
+            </div>
+        </div>
     </div>
 
     <script src="js/main.js"></script>
