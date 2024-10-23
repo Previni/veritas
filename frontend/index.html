@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ponto Previni</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Ponto Previni</h1>
+        
+        <div class="action-buttons">
+            <button class="action-button" onclick="exportToExcel()">Exportar para Excel</button>
+            <button class="action-button" onclick="showFilterModal()">Filtrar Registros</button>
+            <button class="action-button" onclick="loadData()">Atualizar Dados</button>
+            <button class="action-button" onclick="generateReport()">Gerar Relatório</button>
+        </div>
+
+        <div class="dashboard">
+            <div class="dashboard-card">
+                <h3>Total de Colaboradores</h3>
+                <p id="totalEmployees">Carregando...</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Pontos Registrados Hoje</h3>
+                <p id="todayPunches">Carregando...</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Alertas</h3>
+                <p id="alerts">Carregando...</p>
+            </div>
+        </div>
+
+        <h2>Registros de Ponto</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data/Hora</th>
+                    <th>RE</th>
+                    <th>Nome</th>
+                    <th>Posto</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="punchRecords">
+                <!-- Os registros serão inseridos aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="detailModal" class="modal">
+        <!-- Conteúdo do modal aqui -->
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
